@@ -4,6 +4,16 @@
 // running to a Command instance. When started, an owner
 // ID should be given.
 
+const express = require('express')
+const app = express();
+const port = 3000
+
+app.get('/', (req, res) => res.send('<meta http-equiv="refresh" content="0; URL=https://itzsidhan.gitbook.io/itzsidhan/support"/>'))
+
+app.listen(port, () =>
+console.log(`Enabled 24/7 Hosting.`)
+);
+
 var path = require("path");
 var fs = require("fs");
 var botgram = require("botgram");
